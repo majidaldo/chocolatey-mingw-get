@@ -27,7 +27,7 @@ try {
   }
   Copy-Item "$installDir\var\lib\mingw-get\data\defaults.xml" "$installDir\var\lib\mingw-get\data\profile.xml"
   Write-Host "Adding `'$installDir\bin`' to the path and the current shell path"
-  Install-ChocolateyPath "$installDir\bin" 'user'
+  Install-ChocolateyPath "$installDir\bin" 'machine'
   $env:Path += ";$installDir\bin"
   Write-ChocolateySuccess $package
 } catch {
