@@ -22,8 +22,8 @@ try {
     $url = -join ($downloadLocation, $file, $downloadSuffix)
     $filePath = Join-Path $tempDir $file
     Get-ChocolateyWebFile "$package" "$filePath" "$url"
-	Write-Host "Extracting `'$filePath`' to `'$installDir`'"
-	Start-Process "7za" -ArgumentList "x `"$filePath`" -so | 7za x -ttar -si -y -o`"$installDir`"" -Wait
+  Write-Host "Extracting `'$filePath`' to `'$installDir`'"
+  Start-Process "7za" -ArgumentList "x `"$filePath`" -so | 7za x -ttar -si -y -o`"$installDir`"" -Wait
   }
   Copy-Item "$installDir\var\lib\mingw-get\data\defaults.xml" "$installDir\var\lib\mingw-get\data\profile.xml"
   Write-Host "Adding `'$installDir\bin`' to the path and the current shell path"
