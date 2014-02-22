@@ -3,11 +3,11 @@
   <metadata>
     <id>mingw-get</id>
     <title>mingw-get</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>MingW Maintainers</authors>
     <owners>Robert Coleman</owners>
     <summary>mingw-get</summary>
-    <description>A command-line installer (mingw-get) for MinGW and MSYS deployment on MS-Windows.</description>
+    <description>A command-line installer (mingw-get) for MinGW and MSYS deployment on MS-Windows. Package Source/Issues: https://github.com/rjocoleman/chocolatey-mingw-get</description>
     <projectUrl>http://mingw.org</projectUrl>
     <tags>mingw-get mingw gnu unix</tags>
     <copyright />
@@ -17,7 +17,9 @@
 	<dependencies>
       <dependency id="7zip.commandline" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      1.0.2 Update description (only).
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
