@@ -14,14 +14,8 @@
     <licenseUrl>http://www.mingw.org/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://sourceforge.net/images/potm-2005-09_logo_mingw.gif</iconUrl>
-	<dependencies>
-      <dependency id="7zip.commandline" />
-    </dependencies>
-    <releaseNotes>
-      1.0.2 Update description (only).
+	  <releaseNotes>
+      Change chocolatey to use zip helper.
     </releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  </metadata>  
 </package>
