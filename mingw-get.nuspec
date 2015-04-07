@@ -17,5 +17,8 @@
 	  <releaseNotes>
       Change chocolatey to use zip helper.
     </releaseNotes>
+    <dependencies>      
+      <dependency id="mingw" />
+    </dependencies>
   </metadata>  
 </package>
